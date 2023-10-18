@@ -25,7 +25,7 @@ async function request(token, key) {
   const http = new httpm.HttpClient()
   const url = `https://api.github.com/repos/${owner}/${repo}/actions/caches?key=${key}`
   core.info(`DELETE ${url}`)
-  const res = await http.get(url, {
+  const res = await http.del(url, {
 		Accept: 'Accept: application/vnd.github+json',
 		Authorization: `Bearer ${token}`,
     'User-Agent': 'prantlf/setup-v-action',
