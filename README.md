@@ -9,7 +9,7 @@ GitHub action for deleting cache with a specified key.
 Delete the cache with a specific key:
 
 ```yml
-- uses: prantlf/delete-cache-action@v1
+- uses: prantlf/delete-cache-action@v2
   with:
     key: newchanges-linux-x64.zip-${{ github.sha }}
 ```
