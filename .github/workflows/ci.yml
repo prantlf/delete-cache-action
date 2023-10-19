@@ -83,7 +83,7 @@ jobs:
           exit 1
         fi
     - name: Publish
-      uses: cycjimmy/semantic-release-action@v3
+      uses: cycjimmy/semantic-release-action@v4
       with:
         branches: master
       env:
