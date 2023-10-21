@@ -1,5 +1,11 @@
 # Changes
 
+## [2.0.2](https://github.com/prantlf/delete-cache-action/compare/v2.0.1...v2.0.2) (2023-10-21)
+
+### Bug Fixes
+
+* Update the npm package version ([e6107e9](https://github.com/prantlf/delete-cache-action/commit/e6107e98a2c320b02ce873f93d38263c0a93f2a6))
+
 ## [2.0.1](https://github.com/prantlf/delete-cache-action/compare/v2.0.0...v2.0.1) (2023-10-21)
 
 ### Bug Fixes
