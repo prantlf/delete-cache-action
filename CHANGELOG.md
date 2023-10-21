@@ -1,5 +1,11 @@
 # Changes
 
+## [2.0.1](https://github.com/prantlf/delete-cache-action/compare/v2.0.0...v2.0.1) (2023-10-21)
+
+### Bug Fixes
+
+* Change icon and user agent ([ec24db0](https://github.com/prantlf/delete-cache-action/commit/ec24db09f4ad4d468191075690c99b2d828c8bbb))
+
 ## [2.0.0](https://github.com/prantlf/delete-cache-action/compare/v1.0.0...v2.0.0) (2023-10-19)
 
 ### Chores
