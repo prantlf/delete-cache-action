@@ -28,7 +28,7 @@ async function request(token, key) {
   const res = await http.del(url, {
 		Accept: 'Accept: application/vnd.github+json',
 		Authorization: `Bearer ${token}`,
-    'User-Agent': 'prantlf/setup-v-action',
+    'User-Agent': 'prantlf/delete-cache-action',
     'X-GitHub-Api-Version': '2022-11-28'
 	})
   if (res.message.statusCode !== 200) {

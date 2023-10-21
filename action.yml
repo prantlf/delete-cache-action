@@ -3,7 +3,7 @@ description: 'GitHub action for deleting cache with a specified key.'
 author: prantlf
 
 branding:
-  icon: package
+  icon: delete
   color: red
 
 inputs:
