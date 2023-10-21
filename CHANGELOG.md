@@ -1,5 +1,11 @@
 # Changes
 
+## [2.0.3](https://github.com/prantlf/delete-cache-action/compare/v2.0.2...v2.0.3) (2023-10-21)
+
+### Bug Fixes
+
+* Correct package URLs ([0280b37](https://github.com/prantlf/delete-cache-action/commit/0280b37145e205cd5e4e352ad553376866684a97))
+
 ## [2.0.2](https://github.com/prantlf/delete-cache-action/compare/v2.0.1...v2.0.2) (2023-10-21)
 
 ### Bug Fixes
