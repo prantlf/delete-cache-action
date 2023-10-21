@@ -7,16 +7,16 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/prantlf/setup-v-action/blob/master/LICENSE"
+      "url": "https://github.com/prantlf/delete-cache-action/blob/master/LICENSE"
     }
   ],
-  "homepage": "http://prantlf.github.com/setup-v-action/",
+  "homepage": "http://prantlf.github.com/delete-cache-action/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prantlf/setup-v-action.git"
+    "url": "https://github.com/prantlf/delete-cache-action.git"
   },
   "bugs": {
-    "url": "http://github.com/prantlf/setup-v-action/issues"
+    "url": "http://github.com/prantlf/delete-cache-action/issues"
   },
   "main": "dist/index.js",
   "exports": {
