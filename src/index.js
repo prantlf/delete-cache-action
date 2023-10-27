@@ -32,7 +32,7 @@ async function request(token, key) {
     'X-GitHub-Api-Version': '2022-11-28'
 	})
   if (res.message.statusCode !== 200) {
-    const err = new Error(`${res.message.statusCode} ${res.message.statusMessage}`)
+    const err = new Error(`DELETE ${url} failed: ${res.message.statusCode} ${res.message.statusMessage}`)
     err.response = res
     throw err
   }
