@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/prantlf/delete-cache-action/compare/v2.0.4...v2.0.5) (2023-10-27)
+
+
+### Bug Fixes
+
+* Add URL to the failed request error message ([f57bccc](https://github.com/prantlf/delete-cache-action/commit/f57bccc2260cd6ad20265e746038f064b2137e4b))
+
 ## [2.0.4](https://github.com/prantlf/delete-cache-action/compare/v2.0.3...v2.0.4) (2023-10-27)
 
 
