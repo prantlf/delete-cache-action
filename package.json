@@ -1,6 +1,6 @@
 {
   "name": "delete-cache-action",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "GitHub action for deleting cache with a specified key.",
   "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
   "license": "MIT",
