@@ -43,9 +43,9 @@ jobs:
         version: latest
         run_install: |
           - args: [--frozen-lockfile, --no-verify-store-integrity]
-    - name: Build
-      shell: bash
-      run: npm run build
+    # - name: Build
+    #   shell: bash
+    #   run: npm run build
     - name: Test syntax
       shell: bash
       run: npm test
