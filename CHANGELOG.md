@@ -1,3 +1,10 @@
+## [2.0.6](https://github.com/prantlf/delete-cache-action/compare/v2.0.5...v2.0.6) (2023-10-27)
+
+
+### Bug Fixes
+
+* Update built files ([84dd34e](https://github.com/prantlf/delete-cache-action/commit/84dd34eee8531715bbd275cdc42927b166db2a88))
+
 ## [2.0.5](https://github.com/prantlf/delete-cache-action/compare/v2.0.4...v2.0.5) (2023-10-27)
 
 
