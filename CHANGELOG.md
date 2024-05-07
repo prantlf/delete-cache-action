@@ -1,5 +1,17 @@
 # Changes
 
+## [3.0.0](https://github.com/prantlf/delete-cache-action/compare/v2.0.6...v3.0.0) (2024-05-07)
+
+### Bug Fixes
+
+* Upgrade dependencies ([8602b37](https://github.com/prantlf/delete-cache-action/commit/8602b37ff32530cf4ca95c446f459d4593070ecb))
+* Update built files ([925110d](https://github.com/prantlf/delete-cache-action/commit/925110de41e6e64bfd28cd3bd95324af4d815b6a))
+
+### BREAKING CHANGES
+
+The minimum Node.js version is 20 now. Use the latest
+build images and upgrade other GitHub actions too.
+
 ## [2.0.6](https://github.com/prantlf/delete-cache-action/compare/v2.0.5...v2.0.6) (2023-10-27)
 
 ### Bug Fixes
