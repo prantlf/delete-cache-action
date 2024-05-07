@@ -1,5 +1,6 @@
-## [2.0.6](https://github.com/prantlf/delete-cache-action/compare/v2.0.5...v2.0.6) (2023-10-27)
+# Changes
 
+## [2.0.6](https://github.com/prantlf/delete-cache-action/compare/v2.0.5...v2.0.6) (2023-10-27)
 
 ### Bug Fixes
 
@@ -7,19 +8,15 @@
 
 ## [2.0.5](https://github.com/prantlf/delete-cache-action/compare/v2.0.4...v2.0.5) (2023-10-27)
 
-
 ### Bug Fixes
 
 * Add URL to the failed request error message ([f57bccc](https://github.com/prantlf/delete-cache-action/commit/f57bccc2260cd6ad20265e746038f064b2137e4b))
 
 ## [2.0.4](https://github.com/prantlf/delete-cache-action/compare/v2.0.3...v2.0.4) (2023-10-27)
 
-
 ### Bug Fixes
 
 * Wait 5-10s between failing network requet attempts ([7807e88](https://github.com/prantlf/delete-cache-action/commit/7807e88325cd184e3634cf5ee6cf174501b64ac0))
-
-# Changes
 
 ## [2.0.3](https://github.com/prantlf/delete-cache-action/compare/v2.0.2...v2.0.3) (2023-10-21)
 

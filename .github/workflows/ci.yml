@@ -16,11 +16,9 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-    - name: Simulate archive creation
-      shell: bash
-      run: echo "test" > LICENSE-linux-x64.zip
-    - name: Put archive to cache
-      uses: actions/cache/save@v4
+    - run: echo "test" > LICENSE-linux-x64.zip
+    - uses: actions/cache/save@v4
+      name: Put archive to cache
       with:
         path: LICENSE-linux-x64.zip
         key: LICENSE-linux-x64.zip-${{ github.sha }}
@@ -30,62 +28,49 @@ jobs:
       - prepare
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout sources
-      uses: actions/checkout@v4
-    - name: Install Node
-      uses: actions/setup-node@v3
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 20
         registry-url: 'https://registry.npmjs.org'
-    - name: Install PNPM
-      uses: pnpm/action-setup@v2
+    - uses: pnpm/action-setup@v2
       with:
         version: latest
         run_install: |
           - args: [--frozen-lockfile, --no-verify-store-integrity]
-    # - name: Build
+    # - run: npm run build
     #   shell: bash
-    #   run: npm run build
-    - name: Test syntax
+    - run: npm test
       shell: bash
-      run: npm test
-    - name: Restore archive from cache
-      uses: actions/cache/restore@v4
+    - uses: actions/cache/restore@v4
       with:
         path: LICENSE-linux-x64.zip
         key: LICENSE-linux-x64.zip-${{ github.sha }}
         fail-on-cache-miss: true
-    - name: Check archive
-      shell: bash
-      run: |
+    - run: |
         if [ ! -f "LICENSE-linux-x64.zip" ]; then
           echo "LICENSE-linux-x64.zip does not exist"
           exit 1
         fi
-    - name: Test action
-      uses: ./
+      shell: bash
+    - uses: ./
       with:
         key: LICENSE-linux-x64.zip-${{ github.sha }}
-    - name: Clean archive
+    - run: rm LICENSE-linux-x64.zip
       shell: bash
-      run: rm LICENSE-linux-x64.zip
-    - name: Restore archive from cache once more
-      uses: actions/cache/restore@v4
+    - uses: actions/cache/restore@v4
       with:
         path: LICENSE-linux-x64.zip
         key: LICENSE-linux-x64.zip-${{ github.sha }}
         fail-on-cache-miss: false
-    - name: Check archive
-      shell: bash
-      run: |
+    - run: |
         if [ -f "LICENSE-linux-x64.zip" ]; then
           echo "LICENSE-linux-x64.zip exists"
           exit 1
         fi
-    - name: Publish
-      uses: cycjimmy/semantic-release-action@v4
-      with:
-        branches: master
+      shell: bash
+    - uses: prantlf/publish-release-action@v1
+      if: ${{ github.ref_name == 'master' }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
