@@ -33,7 +33,7 @@ Authorization token to access the cache in the target repository. Either a GitHu
 
 ## License
 
-Copyright (C) 2023 Ferdinand Prantl
+Copyright (C) 2023-2024 Ferdinand Prantl
 
 Licensed under the [MIT License].
 
