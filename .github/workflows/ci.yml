@@ -20,7 +20,7 @@ jobs:
       shell: bash
       run: echo "test" > LICENSE-linux-x64.zip
     - name: Put archive to cache
-      uses: actions/cache/save@v3
+      uses: actions/cache/save@v4
       with:
         path: LICENSE-linux-x64.zip
         key: LICENSE-linux-x64.zip-${{ github.sha }}
@@ -50,7 +50,7 @@ jobs:
       shell: bash
       run: npm test
     - name: Restore archive from cache
-      uses: actions/cache/restore@v3
+      uses: actions/cache/restore@v4
       with:
         path: LICENSE-linux-x64.zip
         key: LICENSE-linux-x64.zip-${{ github.sha }}
@@ -70,7 +70,7 @@ jobs:
       shell: bash
       run: rm LICENSE-linux-x64.zip
     - name: Restore archive from cache once more
-      uses: actions/cache/restore@v3
+      uses: actions/cache/restore@v4
       with:
         path: LICENSE-linux-x64.zip
         key: LICENSE-linux-x64.zip-${{ github.sha }}
