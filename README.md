@@ -9,9 +9,16 @@ GitHub action for deleting cache with a specified key.
 Delete the cache with a specific key:
 
 ```yml
-- uses: prantlf/delete-cache-action@v2
+- uses: prantlf/delete-cache-action@v4
   with:
     key: newchanges-linux-x64.zip-${{ github.sha }}
+```
+
+**Attention**: Make sure that you grant the write permission for actions in the job or workflow, which uses this action:
+
+```yml
+permissions:
+  actions: write
 ```
 
 ## Inputs
