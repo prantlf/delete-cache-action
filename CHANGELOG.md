@@ -1,5 +1,16 @@
 # Changes
 
+## [4.0.0](https://github.com/prantlf/delete-cache-action/compare/v3.0.0...v4.0.0) (2026-07-19)
+
+### Features
+
+* Upgrade to Node.js 24 ([5ffd057](https://github.com/prantlf/delete-cache-action/commit/5ffd0577f10bfe23c9ac1cbee8f41e21292f9367))
+
+### BREAKING CHANGES
+
+The minimum supported version of Node.js is 24
+and the module format is ESM.
+
 ## [3.0.0](https://github.com/prantlf/delete-cache-action/compare/v2.0.6...v3.0.0) (2024-05-07)
 
 ### Bug Fixes
