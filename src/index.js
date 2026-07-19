@@ -5,10 +5,10 @@ if (typeof global.crypto.getRandomValues !== 'function') {
   global.crypto.getRandomValues = getRandomValues
 }
 
-const core = require('@actions/core')
-const { context } = require('@actions/github');
-const httpm = require('@actions/http-client')
-const MersenneTwister = require('mersenne-twister')
+import * as core from '@actions/core'
+import { context } from '@actions/github'
+import * as httpm from '@actions/http-client'
+import MersenneTwister from 'mersenne-twister'
 
 const twister = new MersenneTwister(Math.random() * Number.MAX_SAFE_INTEGER)
 function getRandomValues(dest) {
